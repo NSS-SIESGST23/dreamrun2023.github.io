@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+    background: #333;
+}
+
+/* NavBar */
+
+.logo img {
+  max-width: 175px;
+}
+
+header {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle.active {
+    position: fixed;
+}
+
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: #120e0f;
+  transform: translateY(-6px);
+  transition: 0.5s;
+}
+
+.toggle.active::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background: #120e0f;
+  transform: translateY(6px);
+  transition: 0.5s;
+}
+
+.toggle.active::after {
+  transform: translateY(0) rotate(-45deg);
+}
+.navigation {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding-right: 100px;
+  background: #120e0f url(/Images/navbg.png);
+  background-position: right;
+  background-size: cover;
+  display: none;
+}
+
+.navigation.active {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navigation li {
+  list-style: none;
+  margin: 4px 0;
+}
+
+.navigation li a {
+  color: #fff;
+  font-size: 2em;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navigation li a:hover {
+  color: #e83c80;
+}
+
+/* HeroSection */
+
+.banner {
+  min-height: 100vh;
+  background: linear-gradient(275deg,rgba(10,10,10,0.5) 0,rgba(10,10,10,1) 120%) , url(/Images/Marathon-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px 100px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+  max-width: 700px;
+}
+
+.content .textimg {
+  max-width: 600px;
+  width: 100%;
+}
+
+.content p {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.75em;
+  font-weight: 300;
+}
+
+.content .presents {
+    display: block;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    font-size: 1em;
+}
+
+.content .title {
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
+    font-size: 5em;
+    letter-spacing: 0.1em;
+}
+
+.Regbtn {
+  position: relative;
+  background: #e83c80;
+  color: #fff;
+  padding: 10px 18px;
+  margin-top: 20px;
+  display: inline-flex;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.Regbtn:hover {
+  background: #d43071;
+}
+
+.clip {
+  position: absolute;
+  right: 100px;
+  bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.clip .Box {
+  position: relative;
+  width: 340px;
+  height: 220px;
+  border: 8px solid #fff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #e83c80;
+}
+
+.clip .Box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.clip .Box:hover img {
+  opacity: 0.4;
+}
+
+.clip .Box ion-icon {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.socialIcon {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.socialIcon li {
+  list-style: none;
+}
+
+.socialIcon li a {
+  font-size: 2em;
+  color: #fff;
+}
+
+.socialIcon li a:hover {
+  color: #e83c80;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #e83c80;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 300px;
+}
+
+footer .footer-social , .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .footer-social li , .menu li {
+    list-style: none;
+}
+
+footer .footer-social li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+}
+
+footer .footer-social li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: .5s;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    /* background: url(./Images/wave.svg); */
+    background-size: 1000px 100px;
+}
+
+/* footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: wave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: wave2 4s linear infinite
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: wave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: wave2 3s linear infinite
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+@keyframes wave2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+} */
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .banner {
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .content {
+    margin-top: 150px;
+  }
+  .clip {
+    position: relative;
+    right: initial;
+    left: initial;
+    margin: 80px 0 0 0;
+  }
+  .socialIcon {
+    position: relative;
+    bottom: initial;
+    left: initial;
+  }
+  .navigation {
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+    .content .title {
+        font-size: 4em;
+    }
+    .content p {
+        font-size: 0.9em;
+    }
+    .clip .Box {
+        width: 300px;
+        height: 180px;
+    }
+}

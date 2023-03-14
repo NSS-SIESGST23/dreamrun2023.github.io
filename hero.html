@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="hero.css">
+
+    <script src="https://kit.fontawesome.com/65d2ebec1e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+
+    <nav class="container">
+        <header class="header">
+            <a href="#" class="brand"><img src="/Images/NSS Posters Logo.png" alt="" width="55px" height="55px"></a>
+            <div class="menu-btn">
+                <div class="navigation">
+                    <div class="navigation-items">
+                        <a href="#home">Home</a>
+                        <a href="#events">Events</a>
+                        <a href="#"> <span class="small-text">Run'23</span></a>
+                        <a href="#timeline">Timeline</a>
+                        <a href="#footer">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </nav>
+
+    <section class="home" id="#id">
+        <div class="overlay"></div>
+        <img src="./images2/1.png" alt="" class="img-slide active">
+        <img src="./images2/2.png" alt="" class="img-slide ">
+        <img src="./images2/3.png" alt="" class="img-slide ">
+        <img src="./images2/4.png" alt="" class="img-slide ">
+
+        <div class="hero" id="home">
+            <div class="head container mt-5">
+                <h1 class="primary-title">
+                    <img src="./images2/DREAM RUN'23.png" class="title mb-0" data-aos="zoom-out" />
+                </h1>
+                <p class="text-center about-text white pb-5" data-aos="fade-up" data-aos-duration=" 2500">
+                    Dream Run a Marathon for a Cause, an event that combines the excitement of running with the chance
+                    to have a
+                    positive effect on the society. Those that take part in this marathon raise awareness and donations
+                    for a
+                    good cause. </p>
+                <a href="https://forms.gle/1kv4NbYP3JtNdfKm9">Register Now</a>
+            </div>
+        </div>
+        <!-- <div class="content">
+            <h1>HEADING-1<br> <span>SUTITLE</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus aperiam consequuntur officiis repellat,
+                cupiditate deleniti in a impedit quasi soluta vel facere temporibus recusandae corrupti aspernatur,
+                quibusdam nam, ullam voluptas nihil quia delectus! Est nulla et suscipit facilis, sint delectus maxime
+                repellendus enim beatae reiciendis itaque, saepe esse aspernatur? Fugiat!
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>HEADING-1<br> <span>SUTITLE</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab facere adipisci et quia eveniet, sit
+                laudantium aliquam. Nesciunt reprehenderit molestiae pariatur error amet perferendis, magnam eos,
+                explicabo culpa quae impedit sapiente ab temporibus veritatis consequuntur id aut tempore cupiditate
+                velit ducimus tempora, doloremque rerum. Pariatur laudantium beatae quidem labore quae!
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>HEADING-1<br> <span>SUTITLE</span></h1>
+            <p>LLorem ipsum dolor, sit amet consectetur adipisicing elit. Ab facere adipisci et quia eveniet, sit
+                laudantium aliquam. Nesciunt reprehenderit molestiae pariatur error amet perferendis, magnam eos,
+                explicabo culpa quae impedit sapiente ab temporibus veritatis consequuntur id aut tempore cupiditate
+                velit ducimus tempora, doloremque rerum. Pariatur laudantium beatae quidem labore quae!
+            </p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="content">
+            <h1>HEADING-1<br> <span>SUTITLE</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab facere adipisci et quia eveniet, sit
+                laudantium aliquam. Nesciunt reprehenderit molestiae pariatur error amet perferendis, magnam eos,
+                explicabo culpa quae impedit sapiente ab temporibus veritatis consequuntur id aut tempore cupiditate
+                velit ducimus tempora, doloremque rerum. Pariatur laudantium beatae quidem labore quae!
+            </p>
+            <a href="#">Read More</a>
+        </div> -->
+
+        <div class="media-icons">
+            <a href="https://youtube.com/@thenssunitofsiesgst1815" data-aos="fade-right" data-aos-delay="0"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://instagram.com/nss_siesgst?igshid=YmMyMTA2M2Y=" data-aos="fade-right" data-aos-delay="200"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="mailto:nss.siesgst@gmail.com" data-aos="fade-right" data-aos-delay="400"><ion-icon name="mail"></ion-icon></a>
+        </div>
+
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+
+    </section>
+
+    <div class="container-fluid countdown mt-5 mb-5" id="#timer">
+        <h3 class="secondary-title text-center pt-2 pb-2" style="margin-bottom:70px;">COUNT <span class="small-text">DOWN</span></h3>
+        <div class="container mt-5">
+            <div class="row justify-content-around text-center ">
+                <div class="timer" data-aos="fade-up" data-aos-delay="0">
+                    <h2 id="days"></h2>
+                    <small>Days</small>
+                </div>
+                <h2 class="colon">:</h2>
+                <div class="timer" data-aos="fade-up" data-aos-delay="300">
+                    <h2 id="Hours"></h2>
+                    <small>Hours</small>
+                </div>
+                <h2 class="colon">:</h2>
+                <div class="timer" data-aos="fade-up" data-aos-delay="600">
+                    <h2 id="Minutes"></h2>
+                    <small>Minutes</small>
+                </div>
+                <h2 class="colon">:</h2>
+                <div class="timer" data-aos="fade-up" data-aos-delay="900">
+                    <h2 id="Seconds"></h2>
+                    <small>Seconds</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid" id="about">
+        <div class="row gx-5 align-items-center" style="    position: relative;top: 206px;">
+            <div class="col-lg-6 col-md-6 col-sm-12 pr-lg-5 pr-md-5">
+                <div class="about-image" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./Images/runner.png" alt="" />
+                </div>
+                <div class="info">
+                    8km | 2hrs 4mins
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 pl-lg-5 pl-md-5 mt-5 about-holder">
+                <div class="about-heading" data-aos="zoom-in-up" data-aos-duration="500">
+                    <h1 class="about-title">SPEED SETTING TO REACH THE FINAL LINE</h1>
+                </div>
+                <div class="about-info">
+                    <p class="pt-lg-5 pt-md-4 pt-sm-5 pt-5">
+                        The Indian Society for Technical Education (ISTE) is the leading
+                        National Professional non-profit making Society for the
+                        Technical Education System in our country with the motto of
+                        Career Development of Teachers and Personality Development of
+                        Students and overall development of our Technical Education
+                        System. Keeping the motto in mind SIES Graduate School of
+                        Technology’s ISTE student chapter conducts two flagship events,
+                        InternXpo and Matrix.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="events" id="events">
+        <h3 class="secondary-title text-center pt-2 pb-2">DREAM <span class="small-text">RUN</span></h3>
+        <div class="container-fluid">
+            <div class="row  squabble  d-flex justify-content-center align-items-center pb-md-5 pb-lg-0">
+                <div class="col-md-6 event-cover" data-aos="fade-up-left" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                    <img src="./images2/man.png" class=" d-block w-100 img-fluid even " />
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left" data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                    <div class="p-3 pb-md-5 pb-lg-0 mb-5">
+                        <h1 class="event-title mb-3">About Dream Run</h1>
+                        <p class="event-content mt-5 about"> The NSS Unit Of SIESGST hosts DREAM RUN, a marathon for a
+                            cause
+                            that
+                            combines
+                            the thrill of running with the opportunity to make a difference in society.
+                            Participants in this marathon raise both funds and awareness for a worthwhile cause. Whether
+                            you are an
+                            experienced runner or are just getting started, taking part in the Dream Run for a Cause is
+                            a meaningful
+                            way to challenge yourself while improving the lives of others, as our motto "Miles for
+                            Smiles" suggests.
+                            The primary reason Dream Run is performed each year is to generate money and publicity for a
+                            worthwhile
+                            cause.
+                            It also serves to promote fitness and promote a healthy lifestyle in the community.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row inquisitive d-flex justify-content-center align-items-center pb-md-5 pb-lg-0">
+            <div class="col-md-6 text-center" data-aos="fade-right" data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
+                <div class="p-3 pb-md-5 pb-lg-0">
+                    <h1 class=".secondary-title event-title mb-3">RUN 2023</h1>
+                    <p class="event-content run mt-5"> The NSS Unit's flagship event, "Dream Run - Run for a Cause," is
+                        an annual
+                        marathon that brings together individuals from all walks of life to contribute towards a social
+                        cause and uplift society. This year, we are proud to support children with autism and mental
+                        illnesses by partnering with the Ramchandra Kurulkar Bahuddeshiya Shikshan Sanstha.
+
+                        Our aim is to raise significant funds to support the nonprofit's efforts in improving the lives
+                        of
+                        children with disabilities and autism.
+                    </p>
+                        <div class="Event-button mt-5">
+                            <button type="submit" class="btn  btn-lg draw-border" disabled>
+                                <a href="https://forms.gle/1kv4NbYP3JtNdfKm9">Registrations Form</a>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-6 event-cover" data-aos="fade-up-left" data-aos-duration="1000"
+                data-aos-easing="ease-in-out">
+                <img src="./images2/run23.png" class=" d-block w-100 img-fluid even " />
+            </div>
+        </div>
+    </div>
+
+    <div class="bg" id="timeline">
+        <h3 class="secondary-title text-center pt-2 pb-2">TIME <span class="small-text">LINE.</span></h3>
+        <div class="container-timeline">
+            <div class="timeline">
+                <div class="vl">
+                    <ul class=" mx-4">
+                        <li>
+                            <div class="timeline-content" data-aos="fade-right">
+
+                                <h1>REGISTRATION STARTS</h1>
+                                <div class="date">
+                                    15 MARCH , 2023
+                                </div>
+                            </div>
+                            <br>
+                        </li>
+
+                        <li>
+                            <div class="timeline-content" data-aos="fade-left">
+
+                                <h1>BANNER REVEAL</h1>
+                                <div class="date">
+                                    17 MARCH , 2023
+                                </div>
+                            </div>
+                            <br>
+                        </li>
+                        <li>
+                            <div class="timeline-content" data-aos="fade-right">
+                                <div>
+                                    <h1>REGISTRATION ENDS</h1>
+                                    <div class="date">
+                                        24 MARCH , 2023
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br>
+
+                        </li>
+
+                        <li>
+                            <div class="timeline-content" data-aos="fade-left">
+                                <div>
+                                    <h1>MARATHON</h1>
+                                    <div class="date">
+                                        2 APRIL , 2023
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid FAQ-sec" id="faq">
+        <h3 class="secondary-title text-center pt-5 pb-2">FREQUENTLY <span class="small-text">ASKED</span> QUESTIONS
+        </h3>
+        <div class="container-fluid">
+            <!-- <div class="row align-items-center pt-5 pb-5">
+                    <div class="col-lg-4 faq-img">
+                        <img src="./assets/faq-img.svg" alt="" width="100%">
+                    </div> -->
+            <div class="col-lg-12 faq-ques">
+                <div class="faq-content">
+                    <div class="faq">
+                        <div class="questions">
+                            <h3>What is Dream Run'23?</h3>
+
+                            <ion-icon name="caret-down-outline"></ion-icon>
+
+                        </div>
+                        <div class="answers">
+                            <p>
+                                Dream Run, a marathon to promote fitness and a healthy lifestyle in the community, to
+                                raise funds and awareness for a particular cause.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="questions">
+                            <h3>What is the marathon's cause?</h3>
+
+                            <ion-icon name="caret-down-outline"></ion-icon>
+
+                        </div>
+                        <div class="answers">
+                            <p>
+                                The cause for Dream Run'23 is Autism. The NGO is also assosiated with other activities
+                                as well such as education for mentally disabled and aadivasi
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="questions">
+                            <h3>What are benefits of participating ?</h3>
+
+                            <ion-icon name="caret-down-outline"></ion-icon>
+
+                        </div>
+                        <div class="answers">
+                            <p>
+                                Participating in the Dream Run'23 for a cause like autism can be an excellent way to
+                                make a difference in the lives of children and families affected by this disorder.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="questions">
+                            <h3>What is the registration fee?</h3>
+
+                            <ion-icon name="caret-down-outline"></ion-icon>
+
+                        </div>
+                        <div class="answers">
+                            <p>
+                                The registration fees vary according to the kms. For e.g- 3kms- 120 Rs, 5kms- 250 Rs ,
+                                8kms- 500 Rs and if the participant wants to donate any monetary amount they can so.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="faq">
+                        <div class="questions">
+                            <h3>What do I get by attending ByteCamp?</h3>
+
+                            <ion-icon name="caret-down-outline"></ion-icon>
+
+                        </div>
+                        <div class="answers">
+                            <p>
+                                No, we aren't breaking into anything. Hacking is a new process of learning. To
+                                us,
+                                hacking means
+                                creating, innovating, and building something awesome with software or hardware.
+                                Another definition
+                                that we have is creatively solving a problem.
+                            </p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid footer" id="footer">
+            <!-- <div class="wave" id="wave1"></div> -->
+            <div class="container-fluid footer-box">
+                <div class="row justify-content-between">
+                    <!-- <div class="col-sm-12 col-lg-8 no-gutters">
+                        <div class="col-12 row">
+                            <div class="col-sm-12 col-md-8 col-lg-8 p-0">
+                                <div class="col-12">
+                                    <img src="./Images/ISTE Logo.svg" alt="" />
+                                </div>
+                                <div class="col-12 pt-5">
+                                    <p>
+                                        The ISTE and InternXpo logo is copyright under ISTE.ORG
+                                        ISTE SIESGST operates indepedently under ISTE.ORG
+                                    </p>
+                                </div>
+                            </div>
+        
+                        </div>
+                        <div class="col-12 pt-5 subtitle">
+                            <p>
+                                Site Designed & Maintained by :
+                                <span> Technical Team @ISTESIESGST </span>
+                            </p>
+                        </div>
+                    </div> -->
+
+                    <div class="col-sm-12 col-md-4 col-lg-2 pl-4">
+                        <div class="widget">
+                            <h5 class="footer-heading ">Useful Links</h5>
+                            <ul class="list-unstyled float-left link-footer pt-2">
+                                <li><a href="#about">About</a></li>
+                                <li><a href="./Team.html">Team</a></li>
+                                <li>
+                                    <a href="./Brochures/ISTE BROUCHRE .pdf" target="_blank">Brochure</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-7 pl-4 mt-lg-0 mt-md-0 my-5">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="row justify-content-center col-12 nss-footer p-0">
+                                <img src="/Images/NSS Posters Logo.png" alt="">
+                            </div>
+                            <div class="col-12">
+                                <p>
+                                <h2 class="text-center" style="padding-top: 20px;font-size: 1.6em;">The NSS Unit of
+                                    SIESGST</h2>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row col-12 pt-5 align-items-end h-25 develop">
+                                <p class="mb-sm-5">
+                                    Site Designed & Maintained by :
+                                    <span> NSS Unit of @ISTESIESGST </span>
+                                </p>
+                            </div> -->
+
+
+
+                    <div class="col-sm-12 col-lg-3">
+                        <h5 class="footer-heading mb-5 mb-lg-4">Reach Us</h5>
+                        <!-- <div class="widget">
+                            <ol class="list-unstyled social">
+                                <li data-aos="fade-left" data-aos-delay="0">
+                                    <a href="mailto:iste@siesgst.ac.in" target="_blank"><i
+                                            class="fa-solid fa-square-envelope fa-xl"></i></a>
+                                </li>
+                                <li data-aos="fade-left" data-aos-delay="100">
+                                    <a href="https://www.instagram.com/iste_siesgst/" target="_blank"><i
+                                            class="fa-brands fa-square-instagram fa-xl"></i></a>
+                                </li>
+                                <li data-aos="fade-left" data-aos-delay="200">
+                                    <a href="https://www.linkedin.com/company/iste-sies-gst/mycompany/"
+                                        target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                                </li>
+                            </ol>
+                        </div> -->
+                        <div class="col-12 no-gutters row info">
+                            <div class="col-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="col-10">
+                                <p class="contact ml-3 mb-0">
+                                    Sayli Warde:
+                                    <a href="tel:+918097142850">8097142850</a> <br />
+                                    Abhishek Tiwari:
+                                    <a href="tel:+919653183035">9653183035</a> <br />
+                                    Aditi Pathak:
+                                    <a href="tel:+918108200632">8108200632</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 no-gutters row info">
+                            <div class="col-1" style="position: relative;top:2px;">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="col-10 ml-3">
+                                <a href="mailto:nss.siesgst@gmail.com" target="_blank"
+                                    class="pl-3 pl-lg-0 contact">nss.siesgst@gmail.com</a>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 no-gutters row info">
+                            <div class="col-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="col-10">
+                                <p class="contact">
+                                    SIES Graduate School of Technology, <br />
+                                    Plot 1-C D&E, Sector-V, <br />Navi Mumbai, Maharashtra.
+                                </p>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="/hero.js"></script>
+
+    <!-- ioicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 50,
+        duration: 1000,
+      });
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
